@@ -10,7 +10,7 @@ const Brief = ({brief}) => (
       <img src="http://clipart-library.com/img/936445.png"  alt="lil star guy" className="image_right"/>
       <img src="http://clipart-library.com/img/936445.png"  alt="lil star guy" className="image_left"/>
       {brief.category} and the {brief.animal.replace(/^\w/, c => c.toUpperCase())}</h1>
-    <h4 className="header">by Melanie Walsh's little microfiction generator</h4>
+    <h4 className="header">by <a href="https://melaniewalsh.org">Melanie Walsh's</a> lil' microfiction generator</h4>
     <p>
       "{brief.interjection.replace(/^\w/, c => c.toUpperCase())}," said the {brief.animal.replace(/^\w/, c => c.toUpperCase())}, {brief.animalOccupation}{brief.celebrity}, from the {brief.table}. The {brief.animal.replace(/^\w/, c => c.toUpperCase())} was {brief.drunk} on {brief.food} (which can be very intoxicating for {pluralize(brief.animal)}, if you didn't know). "Don't these {brief.subject} seem to get more <i>{brief.adjective}</i> every year?"
     </p>
